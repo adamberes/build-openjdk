@@ -87,4 +87,9 @@ The generated version will be in the Build directory:
 ~/jdk/build/windows-x86_64-server-release/jdk
 
 Check the newly created OpenJDK as follow:
-
+  ```
+$ ./build/windows-x86_64-server-release/jdk/bin/java -version
+openjdk version "25-internal" 2025-09-16
+OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
+OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
+  ```
