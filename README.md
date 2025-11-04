@@ -1,4 +1,4 @@
-# Build OpenJDK Version 25 from Sources in Windows 11 without WSL
+# Build OpenJDK Version 25 and 26 from Sources in Windows 11 without WSL
 
 Here a detailed description about building the OpenJDK from sources.
 
@@ -119,7 +119,22 @@ The generated version will be in the Build directory:
 Check the newly created OpenJDK as follow:
   ```
 $ ./build/windows-x86_64-server-release/jdk/bin/java -version
+
 openjdk version "25-internal" 2025-09-16
+
 OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
+
 OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
   ```
+
+Version 26:
+  ```
+$  ./build/windows-x86_64-server-release/jdk/bin/java -version
+
+openjdk version "26-internal" 2026-03-17
+
+OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
+
+OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
+  ```
+
