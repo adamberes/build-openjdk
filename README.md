@@ -76,7 +76,6 @@ Build performance summary:
 * Build jobs:     12
 * Memory limit:   65403 MB
   ```
-## Build the OpenJDK from the downloaded sources
   ```
 The result is something similar for Version 26
   ```
@@ -107,6 +106,7 @@ Build performance summary:
 * Memory limit:   65402 MB
 * 
   ```
+## Build the OpenJDK from the downloaded sources
 
 # build 
 make 
