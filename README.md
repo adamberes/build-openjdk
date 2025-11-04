@@ -48,7 +48,7 @@ The Build Process will be done under the Cygwin Environment.
   # run configure to generate the file: make 
   bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-24 --with-jtreg=/home/info/jtreg/ 
   ```
-The result is something similar:
+The result is something similar for Version 25
   ```
 ====================================================
 A new configuration has been successfully created in
@@ -78,6 +78,36 @@ Build performance summary:
   ```
 ## Build the OpenJDK from the downloaded sources
   ```
+The result is something similar for Version 26
+  ```
+====================================================
+A new configuration has been successfully created in
+/home/info/jdk/build/windows-x86_64-server-release
+using configure arguments '--with-boot-jdk=/cygdrive/c/bin2025/java-bin/jdk-25.0.1 --with-jtreg=/home/info/jtreg/'.
+
+Configuration summary:
+* Name:           windows-x86_64-server-release
+* Debug level:    release
+* HS debug level: product
+* JVM variants:   server
+* JVM features:   server: 'cds compiler1 compiler2 epsilongc g1gc jfr jni-check jvmci jvmti management parallelgc serialgc services shenandoahgc vm-structs zgc'
+* OpenJDK target: OS: windows, CPU architecture: x86, address length: 64
+* Version string: 26-internal-adhoc.info.jdk (26-internal)
+* Source date:    1762286811 (2025-11-04T20:06:51Z)
+
+Tools summary:
+* Environment:    cygwin version 3.6.5-1.x86_64, 2025-10-09 17:21 UTC; windows version 10.0.26200.7019; prefix "/cygdrive"; root "C:\cygwin64"
+* Boot JDK:       openjdk version "25.0.1" 2025-10-21 OpenJDK Runtime Environment (build 25.0.1+8-27) OpenJDK 64-Bit Server VM (build 25.0.1+8-27, mixed mode, sharing) (at /cygdrive/c/bin2025/java-bin/jdk-25.0.1)
+* Toolchain:      microsoft (Microsoft Visual Studio 2022)
+* C Compiler:     Version 19.44.35219 (at /cygdrive/c/progra~1/mib055~1/2022/community/vc/tools/msvc/14.44.35207/bin/hostx64/x64/cl.exe)
+* C++ Compiler:   Version 19.44.35219 (at /cygdrive/c/progra~1/mib055~1/2022/community/vc/tools/msvc/14.44.35207/bin/hostx64/x64/cl.exe)
+
+Build performance summary:
+* Build jobs:     12
+* Memory limit:   65402 MB
+* 
+  ```
+
 # build 
 make 
 # build and run some tests
