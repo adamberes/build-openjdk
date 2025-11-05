@@ -23,7 +23,7 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 - 4)Cygwin will be also needed with some additional Components. On the [Cygwin Homepage](https://cygwin.com/) download the [Cygwin Installer](https://cygwin.com/setup-x86_64.exe)
   Execute the folowing command to install additional components like: Make,Autoconf,Unzip,Zip and Wget.
   ```
-  setup-x86_64.exe -q --packages=make,autoconf,unzip,zip,wget
+  C:\setup-x86_64.exe -q --packages=make,autoconf,unzip,zip,wget
   ```
 - 5)Git is also needed. Download and install from: [Git Download for Windows](https://git-scm.com/downloads/win)
 
@@ -34,7 +34,7 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 - 7)Install JTReg (JTReg is similar to JUnit but is older as JUnit) from the [OpenJDK JTReg builds](https://builds.shipilev.net/jtreg/)
   **Important**: use always the latest version of JTReg.
   ```
-  unzip jtreg-8.1+1.zip
+  $ unzip jtreg-8.1+1.zip
   ```
 
 
