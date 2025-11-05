@@ -1,13 +1,7 @@
-# Build OpenJDK Version 25 and 26 binaries from sources in Windows 11 without WSL
+# Build OpenJDK Version 25 and 26 from Sources in Windows 11 without WSL
 
-### Here a detailed description about building the OpenJDK from sources
-you ask why without WLS ? in WLS is not possible to build the Windows version
+Here a detailed description about building the OpenJDK from sources.
 
-<<<<<<< HEAD
-A detailed description of the process is folowing folders:
-- [Readme for version 25](/Version%2025/README.md)
-- [Readme for version 25 and binarys](/Version%2026/README.md)
-=======
 Following prerequisites are have to be installed befor compiling the sources for Windowns Environment.
 
 - 1)Here the [build description from OpenJDK](https://openjdk.org/groups/build/doc/building.html)
@@ -16,15 +10,14 @@ Following prerequisites are have to be installed befor compiling the sources for
 
     - [Download OpenJDK Version 24](https://jdk.java.net/24/)
 
-    - [Download OpenJDK Version 25](https://jdk.java.net/25/)
 
 
 - 3)The C++ Compiler well be needed from Microsoft, is included in the Comunity Edition from Microsoft Visual Studio.
 [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/de/downloads/)
 Only the "The Desktop development with C++", the "out-of-support components" can be desabled.
 
-     - [Here a Screen-Shot about the C++ components that is needed.](screen-shots/visual-studio.jpg) 
-     - [Here a Screen-Shot about the English language (in german Language:"Sprachpackete") pack that is needed.](screen-shots/visual-studio2.jpg) 
+     - [Here a Screen-Shot about the C++ components that is needed.](../screen-shots/visual-studio.jpg) 
+     - [Here a Screen-Shot about the English language (in german Language:"Sprachpackete") pack that is needed.](../screen-shots/visual-studio2.jpg) 
 
 
 - 4)Cygwin will be also needed with some additional Components. On the [Cygwin Homepage](https://cygwin.com/) download the [Cygwin Installer](https://cygwin.com/setup-x86_64.exe)
@@ -35,7 +28,7 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 - 5)Git is also needed. Download and install from: [Git Download for Windows](https://git-scm.com/downloads/win)
 
 
-- 6)Install the [English Language Pack for the USA in Windows](screen-shots/setting-windows2.jpg) this will be needed by the generation of the make file for the process.
+- 6)Install the [English Language Pack for the USA in Windows](../screen-shots/setting-windows2.jpg) this will be needed by the generation of the make file for the process.
 
 
 - 7)Install JTReg (JTReg is similar to JUnit but is older as JUnit) from the [OpenJDK JTReg builds](https://builds.shipilev.net/jtreg/)
@@ -86,66 +79,26 @@ Build performance summary:
 * Build jobs:     12
 * Memory limit:   65403 MB
   ```
-  ```
-The result is something similar for Version 26
-  ```
-====================================================
-A new configuration has been successfully created in
-/home/info/jdk/build/windows-x86_64-server-release
-using configure arguments '--with-boot-jdk=/cygdrive/c/bin2025/java-bin/jdk-25.0.1 --with-jtreg=/home/info/jtreg/'.
 
-Configuration summary:
-* Name:           windows-x86_64-server-release
-* Debug level:    release
-* HS debug level: product
-* JVM variants:   server
-* JVM features:   server: 'cds compiler1 compiler2 epsilongc g1gc jfr jni-check jvmci jvmti management parallelgc serialgc services shenandoahgc vm-structs zgc'
-* OpenJDK target: OS: windows, CPU architecture: x86, address length: 64
-* Version string: 26-internal-adhoc.info.jdk (26-internal)
-* Source date:    1762286811 (2025-11-04T20:06:51Z)
-
-Tools summary:
-* Environment:    cygwin version 3.6.5-1.x86_64, 2025-10-09 17:21 UTC; windows version 10.0.26200.7019; prefix "/cygdrive"; root "C:\cygwin64"
-* Boot JDK:       openjdk version "25.0.1" 2025-10-21 OpenJDK Runtime Environment (build 25.0.1+8-27) OpenJDK 64-Bit Server VM (build 25.0.1+8-27, mixed mode, sharing) (at /cygdrive/c/bin2025/java-bin/jdk-25.0.1)
-* Toolchain:      microsoft (Microsoft Visual Studio 2022)
-* C Compiler:     Version 19.44.35219 (at /cygdrive/c/progra~1/mib055~1/2022/community/vc/tools/msvc/14.44.35207/bin/hostx64/x64/cl.exe)
-* C++ Compiler:   Version 19.44.35219 (at /cygdrive/c/progra~1/mib055~1/2022/community/vc/tools/msvc/14.44.35207/bin/hostx64/x64/cl.exe)
-
-Build performance summary:
-* Build jobs:     12
-* Memory limit:   65402 MB
-* 
-  ```
 ## Build the OpenJDK from the downloaded sources
 
-# build 
-make 
-# build and run some tests
-make run-test-tier1
+### Build:
   ```
-The generated version will be in the Build directory:
-~/jdk/build/windows-x86_64-server-release/jdk
+$ make 
+  ```
+### Build and run some tests:
+  ```
+$ make run-test-tier1
+  ```
+### The generated version will be in the Build directory:
+  ```
+$ ~/jdk/build/windows-x86_64-server-release/jdk
+  ```
 
 Check the newly created OpenJDK as follow:
   ```
 $ ./build/windows-x86_64-server-release/jdk/bin/java -version
-
 openjdk version "25-internal" 2025-09-16
-
 OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
-
 OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
   ```
-
-Version 26:
-  ```
-$  ./build/windows-x86_64-server-release/jdk/bin/java -version
-
-openjdk version "26-internal" 2026-03-17
-
-OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
-
-OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
-  ```
->>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
-
