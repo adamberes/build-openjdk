@@ -1,6 +1,6 @@
 This is a custom build of OpenJDK 26, distributed under the GNU General Public License version 2 with Classpath Exception (GPLv2+CPE).
 
-Source code: https://github.com/adamberes/build-openjdk/releases (commit/tag: jdk-26+XX)  // Replace with your exact source tag/commit
+Source code: https://github.com/adamberes/build-openjdk/version-26/build (commit/tag: jdk-26+XX)  // Replace with your exact source tag/commit
 Built by: Adam Beres/GitHub User: adamberes
 Date: 04.11.25
 
