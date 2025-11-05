@@ -8,14 +8,8 @@ Following prerequisites are have to be installed befor compiling the sources for
 
 - 2)OpenJDK one of the latest versions must be installed locally. If the target version, what will be here compiled is the Version 25 then the installed Version of OpenJDK cant be earlier as 23, but for this existing a clear Error message bei generating the make files.
 
-<<<<<<< HEAD
     - [Download OpenJDK Version 25](https://jdk.java.net/25/)
     - Unzip the jdk in Directory: c:\bin2025\jdk-build\jdk-25
-=======
-    - [Download OpenJDK Version 24](https://jdk.java.net/24/)
-
-    - [Download OpenJDK Version 25](https://jdk.java.net/25/)
->>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
 
 
 - 3)The C++ Compiler well be needed from Microsoft, is included in the Comunity Edition from Microsoft Visual Studio.
@@ -61,6 +55,16 @@ The Build Process will be done under the Cygwin Environment.
   bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
   ```
 The result is something similar:
+  wget https://builds.shipilev.net/jtreg/jtreg-8.1+1.zip
+  # unzip 
+  unzip jtreg-8.1+1.zip
+  # clone OpenJDK from main development (Version 26 is now not released)
+  git clone https://github.com/openjdk/jdk.git
+  # cd in the directory: jdk 
+  # run configure to generate the file: make 
+  bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
+  ```
+The result is something similar:
   ```
 ====================================================
 A new configuration has been successfully created in
@@ -95,6 +99,20 @@ Build performance summary:
 make 
 # build and run some tests
 make run-test-tier1
+The generated version will be in the Build directory:
+  ```
+~/jdk/build/windows-x86_64-server-release/jdk
+  ```
+
+Check the newly created OpenJDK as follow:
+  ```
+$  ./build/windows-x86_64-server-release/jdk/bin/java -version
+openjdk version "26-internal" 2026-03-17
+OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
+OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
+  ```
+
+## The binary version of JDK26 is stored in [build](./build/) directory.
 The generated version will be in the Build directory:
   ```
 ~/jdk/build/windows-x86_64-server-release/jdk
