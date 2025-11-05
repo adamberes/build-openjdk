@@ -82,43 +82,23 @@ Build performance summary:
 
 ## Build the OpenJDK from the downloaded sources
 
-<<<<<<< HEAD
-build 
-
-make 
-### build and run some tests
-=======
-# build 
-make 
-# build and run some tests
->>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
-make run-test-tier1
+### Build:
   ```
-The generated version will be in the Build directory:
-~/jdk/build/windows-x86_64-server-release/jdk
-<<<<<<< HEAD
+$ make 
+  ```
+### Build and run some tests:
+  ```
+$ make run-test-tier1
+  ```
+### The generated version will be in the Build directory:
+  ```
+$ ~/jdk/build/windows-x86_64-server-release/jdk
   ```
 
 Check the newly created OpenJDK as follow:
-  
   ```
 $ ./build/windows-x86_64-server-release/jdk/bin/java -version
 openjdk version "25-internal" 2025-09-16
 OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
 OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
   ```
-  
-=======
-
-Check the newly created OpenJDK as follow:
-  ```
-$ ./build/windows-x86_64-server-release/jdk/bin/java -version
-
-openjdk version "25-internal" 2025-09-16
-
-OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
-
-OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
-  ```
-
->>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
