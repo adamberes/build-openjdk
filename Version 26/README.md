@@ -55,6 +55,16 @@ The Build Process will be done under the Cygwin Environment.
   bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
   ```
 The result is something similar:
+  wget https://builds.shipilev.net/jtreg/jtreg-8.1+1.zip
+  # unzip 
+  unzip jtreg-8.1+1.zip
+  # clone OpenJDK from main development (Version 26 is now not released)
+  git clone https://github.com/openjdk/jdk.git
+  # cd in the directory: jdk 
+  # run configure to generate the file: make 
+  bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
+  ```
+The result is something similar:
   ```
 ====================================================
 A new configuration has been successfully created in
@@ -115,6 +125,20 @@ $ ~/jdk/build/windows-x86_64-server-release/jdk
 Check the newly created OpenJDK as follow:
   ```
 $ ./build/windows-x86_64-server-release/jdk/bin/java -version
+openjdk version "26-internal" 2026-03-17
+OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
+OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
+  ```
+
+## The binary version of JDK26 is stored in [build](./build/) directory.
+The generated version will be in the Build directory:
+  ```
+~/jdk/build/windows-x86_64-server-release/jdk
+  ```
+
+Check the newly created OpenJDK as follow:
+  ```
+$  ./build/windows-x86_64-server-release/jdk/bin/java -version
 openjdk version "26-internal" 2026-03-17
 OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
 OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
