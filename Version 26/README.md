@@ -8,8 +8,14 @@ Following prerequisites are have to be installed befor compiling the sources for
 
 - 2)OpenJDK one of the latest versions must be installed locally. If the target version, what will be here compiled is the Version 25 then the installed Version of OpenJDK cant be earlier as 23, but for this existing a clear Error message bei generating the make files.
 
+<<<<<<< HEAD
     - [Download OpenJDK Version 25](https://jdk.java.net/25/)
     - Unzip the jdk in Directory: c:\bin2025\jdk-build\jdk-25
+=======
+    - [Download OpenJDK Version 24](https://jdk.java.net/24/)
+
+    - [Download OpenJDK Version 25](https://jdk.java.net/25/)
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
 
 
 - 3)The C++ Compiler well be needed from Microsoft, is included in the Comunity Edition from Microsoft Visual Studio.
@@ -21,9 +27,15 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 
 
 - 4)Cygwin will be also needed with some additional Components. On the [Cygwin Homepage](https://cygwin.com/) download the [Cygwin Installer](https://cygwin.com/setup-x86_64.exe)
+<<<<<<< HEAD
   Execute the folowing command to install additional components like: Make,Autoconf,Unzip,Zip and Wget.
   ```
   setup-x86_64.exe -q --packages=make,autoconf,unzip,zip,wget
+=======
+  Execute the folowing command to install additional components like: Make,Autoconf,Unzip and Zip.
+  ```
+  setup-x86_64.exe -q --packages=make,autoconf,unzip,zip
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
   ```
 - 5)Git is also needed. Download and install from: [Git Download for Windows](https://git-scm.com/downloads/win)
 
@@ -33,9 +45,12 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 
 - 7)Install JTReg (JTReg is similar to JUnit but is older as JUnit) from the [OpenJDK JTReg builds](https://builds.shipilev.net/jtreg/)
   **Important**: use always the latest version of JTReg.
+<<<<<<< HEAD
   ```
   unzip jtreg-8.1+1.zip
   ```
+=======
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
 
 
 ## Now it is possible to build the OpenJDK
@@ -45,6 +60,7 @@ The Build Process will be done under the Cygwin Environment.
   open a Cygwin Shell with Cygwin.bat
   # now we are in the home directory from the logged in user
   # download the latest JTReg
+<<<<<<< HEAD
   wget https://builds.shipilev.net/jtreg/jtreg-8.1+1.zip
   # unzip 
   unzip jtreg-8.1+1.zip
@@ -55,6 +71,47 @@ The Build Process will be done under the Cygwin Environment.
   bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
   ```
 The result is something similar:
+=======
+  wget https://builds.shipilev.net/jtreg/jtreg-7.5.1+1.zip
+  # unzip 
+  unzip jtreg-7.5.1+1.zip
+  # clone OpenJDK from main development (Version 25 is now not released)
+  git clone https://github.com/openjdk/jdk.git
+  # cd in the directory: jdk 
+  # run configure to generate the file: make 
+  bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-24 --with-jtreg=/home/info/jtreg/ 
+  ```
+The result is something similar for Version 25
+  ```
+====================================================
+A new configuration has been successfully created in
+/home/info/jdk/build/windows-x86_64-server-release
+using configure arguments '--with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-24 --with-jtreg=/home/info/jtreg/'.
+
+Configuration summary:
+* Name:           windows-x86_64-server-release
+* Debug level:    release
+* HS debug level: product
+* JVM variants:   server
+* JVM features:   server: 'cds compiler1 compiler2 epsilongc g1gc jfr jni-check jvmci jvmti management parallelgc serialgc services shenandoahgc vm-structs zgc'
+* OpenJDK target: OS: windows, CPU architecture: x86, address length: 64
+* Version string: 25-internal-adhoc.info.jdk (25-internal)
+* Source date:    1745062716 (2025-04-19T11:38:36Z)
+
+Tools summary:
+* Environment:    cygwin version 3.6.0-1.x86_64, 2025-03-18 17:01 UTC; windows version 10.0.26100.3775; prefix "/cygdrive"; root "C:\cygwin64"
+* Boot JDK:       openjdk version "24" 2025-03-18 OpenJDK Runtime Environment (build 24+36-3646) OpenJDK 64-Bit Server VM (build 24+36-3646, mixed mode, sharing) (at /cygdrive/c/bin2025/jdk-build/jdk-24)
+* Toolchain:      microsoft (Microsoft Visual Studio 2022)
+* C Compiler:     Version 19.43.34808 (at /cygdrive/c/progra~1/mib055~1/2022/commun~1/vc/tools/msvc/1443~1.348/bin/hostx64/x64/cl.exe)
+* C++ Compiler:   Version 19.43.34808 (at /cygdrive/c/progra~1/mib055~1/2022/commun~1/vc/tools/msvc/1443~1.348/bin/hostx64/x64/cl.exe)
+
+Build performance summary:
+* Build jobs:     12
+* Memory limit:   65403 MB
+  ```
+  ```
+The result is something similar for Version 26
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
   ```
 ====================================================
 A new configuration has been successfully created in
@@ -89,6 +146,7 @@ Build performance summary:
 make 
 # build and run some tests
 make run-test-tier1
+<<<<<<< HEAD
 The generated version will be in the Build directory:
   ```
 ~/jdk/build/windows-x86_64-server-release/jdk
@@ -103,3 +161,31 @@ OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
   ```
 
 ## The binary version of JDK26 is stored in [build](./build/) directory.
+=======
+  ```
+The generated version will be in the Build directory:
+~/jdk/build/windows-x86_64-server-release/jdk
+
+Check the newly created OpenJDK as follow:
+  ```
+$ ./build/windows-x86_64-server-release/jdk/bin/java -version
+
+openjdk version "25-internal" 2025-09-16
+
+OpenJDK Runtime Environment (build 25-internal-adhoc.info.jdk)
+
+OpenJDK 64-Bit Server VM (build 25-internal-adhoc.info.jdk, mixed mode)
+  ```
+
+Version 26:
+  ```
+$  ./build/windows-x86_64-server-release/jdk/bin/java -version
+
+openjdk version "26-internal" 2026-03-17
+
+OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
+
+OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
+  ```
+
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
