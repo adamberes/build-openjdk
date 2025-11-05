@@ -8,8 +8,14 @@ Following prerequisites are have to be installed befor compiling the sources for
 
 - 2)OpenJDK one of the latest versions must be installed locally. If the target version, what will be here compiled is the Version 25 then the installed Version of OpenJDK cant be earlier as 23, but for this existing a clear Error message bei generating the make files.
 
+<<<<<<< HEAD
     - [Download OpenJDK Version 25](https://jdk.java.net/25/)
     - Unzip the jdk in Directory: c:\bin2025\jdk-build\jdk-25
+=======
+    - [Download OpenJDK Version 24](https://jdk.java.net/24/)
+
+    - [Download OpenJDK Version 25](https://jdk.java.net/25/)
+>>>>>>> 86406cc0027238c730990f5d1581e06864e25f4a
 
 
 - 3)The C++ Compiler well be needed from Microsoft, is included in the Comunity Edition from Microsoft Visual Studio.
