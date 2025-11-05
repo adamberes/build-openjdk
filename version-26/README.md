@@ -125,31 +125,3 @@ OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
   ```
 
 ## The binary version of JDK26 is stored in [build](./build/) directory.
-The generated version will be in the Build directory:
-  ```
-$ ~/jdk/build/windows-x86_64-server-release/jdk
-  ```
-
-Check the newly created OpenJDK as follow:
-  ```
-$ ./build/windows-x86_64-server-release/jdk/bin/java -version
-openjdk version "26-internal" 2026-03-17
-OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
-OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
-  ```
-
-## The binary version of JDK26 is stored in [build](./build/) directory.
-The generated version will be in the Build directory:
-  ```
-~/jdk/build/windows-x86_64-server-release/jdk
-  ```
-
-Check the newly created OpenJDK as follow:
-  ```
-$  ./build/windows-x86_64-server-release/jdk/bin/java -version
-openjdk version "26-internal" 2026-03-17
-OpenJDK Runtime Environment (build 26-internal-adhoc.info.jdk)
-OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
-  ```
-
-## The binary version of JDK26 is stored in [build](./build/) directory.
