@@ -56,13 +56,21 @@ The Build Process will be done under the Cygwin Environment.
   ```
 The result is something similar:
   wget https://builds.shipilev.net/jtreg/jtreg-8.1+1.zip
-  # unzip 
-  unzip jtreg-8.1+1.zip
-  # clone OpenJDK from main development (Version 26 is now not released)
-  git clone https://github.com/openjdk/jdk.git
-  # cd in the directory: jdk 
-  # run configure to generate the file: make 
-  bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
+  ### unzip 
+  ```
+  $ unzip jtreg-8.1+1.zip
+  ```
+  ### clone OpenJDK from main development (Version 26 is now not released)
+  ```
+  $ git clone https://github.com/openjdk/jdk.git
+  ```
+  ### cd in the directory: jdk 
+  ```
+  $ cd jdk
+  ```
+  ### run configure to generate the file: make 
+  ```
+  $ bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
   ```
 The result is something similar:
   ```
