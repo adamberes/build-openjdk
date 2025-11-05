@@ -5,5 +5,5 @@ you ask why without WLS ? in WLS is not possible to build the Windows version
 
 A detailed description of the process is folowing folders:
 - [Readme for version 25](/Version%2025/README.md)
-- [Readme for version 25 and binarys](/Version%2026/README.md)
+- [Readme for version 26 and binarys](/Version%2026/README.md)
 
