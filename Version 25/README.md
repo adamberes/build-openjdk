@@ -1,4 +1,4 @@
-# Build OpenJDK Version 25 and 26 from Sources in Windows 11 without WSL
+# Build OpenJDK Version 25 from Sources in Windows 11 without WSL
 
 Here a detailed description about building the OpenJDK from sources.
 
