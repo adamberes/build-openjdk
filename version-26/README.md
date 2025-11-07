@@ -16,7 +16,7 @@ Following prerequisites are have to be installed befor compiling the sources for
 [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/de/downloads/)
 Only the "The Desktop development with C++", the "out-of-support components" can be desabled.
 
-     - [Here a Screen-Shot about the C++ components that is needed.](screen-shots/visual-studio.jpg) 
+     - [Here a Screen-Shot about the C++ components that is needed.](../screen-shots/visual-studio.jpg) 
      - [Here a Screen-Shot about the English language (in german Language:"Sprachpackete") pack that is needed.](screen-shots/visual-studio2.jpg) 
 
 
