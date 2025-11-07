@@ -17,7 +17,7 @@ Following prerequisites are have to be installed befor compiling the sources for
 Only the "The Desktop development with C++", the "out-of-support components" can be desabled.
 
      - [Here a Screen-Shot about the C++ components that is needed.](../screen-shots/visual-studio.jpg) 
-     - [Here a Screen-Shot about the English language (in german Language:"Sprachpackete") pack that is needed.](screen-shots/visual-studio2.jpg) 
+     - [Here a Screen-Shot about the English language (in german Language:"Sprachpackete") pack that is needed.](../screen-shots/visual-studio2.jpg) 
 
 
 - 4)Cygwin will be also needed with some additional Components. On the [Cygwin Homepage](https://cygwin.com/) download the [Cygwin Installer](https://cygwin.com/setup-x86_64.exe)
@@ -28,7 +28,7 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 - 5)Git is also needed. Download and install from: [Git Download for Windows](https://git-scm.com/downloads/win)
 
 
-- 6)Install the [English Language Pack for the USA in Windows](screen-shots/setting-windows2.jpg) this will be needed by the generation of the make file for the process.
+- 6)Install the [English Language Pack for the USA in Windows](../screen-shots/setting-windows2.jpg) this will be needed by the generation of the make file for the process.
 
 
 - 7)Install JTReg (JTReg is similar to JUnit but is older as JUnit) from the [OpenJDK JTReg builds](https://builds.shipilev.net/jtreg/)
