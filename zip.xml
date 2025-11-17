@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3
+                              https://maven.apache.org/xsd/assembly-1.1.3.xsd">
+    <id>distribution</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <!-- Include the built JAR -->
+        <fileSet>
+            <directory>C:\cygwin64\home\info\jdk\build\windows-x86_64-server-release/jdk</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+              <include>**/*.*</include>   <!-- all files with an extension -->
+              <include>**/</include>      <!-- all directories (needed for empty ones) -->           
+            </includes>
+        </fileSet>
+    </fileSets>
+</assembly>

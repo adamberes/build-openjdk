@@ -33,12 +33,9 @@ Only the "The Desktop development with C++", the "out-of-support components" can
 
 - 7)Install JTReg (JTReg is similar to JUnit but is older as JUnit) from the [OpenJDK JTReg builds](https://builds.shipilev.net/jtreg/)
   **Important**: use always the latest version of JTReg.
-  ```
-  $ unzip jtreg-8.1+1.zip
-  ```
 
 
-## Now it is possible to build the OpenJDK
+## Now execute the folowing steps to build the OpenJDK
 The Build Process will be done under the Cygwin Environment.
 
   ```
@@ -56,7 +53,7 @@ The Build Process will be done under the Cygwin Environment.
   ```
 The result is something similar:
   wget https://builds.shipilev.net/jtreg/jtreg-8.1+1.zip
-  ### unzip 
+  ### unzip JTReg the latest version
   ```
   $ unzip jtreg-8.1+1.zip
   ```
@@ -68,7 +65,7 @@ The result is something similar:
   ```
   $ cd jdk
   ```
-  ### run configure to generate the file: make 
+  ### run "configure" to generate the "make" file 
   ```
   $ bash configure --with-boot-jdk=/cygdrive/c/bin2025/jdk-build/jdk-25 --with-jtreg=/home/info/jtreg/ 
   ```
@@ -125,3 +122,6 @@ OpenJDK 64-Bit Server VM (build 26-internal-adhoc.info.jdk, mixed mode)
   ```
 
 ## The binary version of JDK26 is stored in [build](./build/) directory.
+
+
+
