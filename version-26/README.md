@@ -14,7 +14,7 @@ Following prerequisites are have to be installed befor compiling the sources for
 
 - 3)The C++ Compiler well be needed from Microsoft, is included in the Comunity Edition from Microsoft Visual Studio.
 [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/de/downloads/)(at 18.11.2025)
-Only the "The Desktop development with C++", the "out-of-support components" can be desabled.
+Only the "The Desktop development with C++", the "out-of-support components" can be disabled.
 Here the [suported Visual Studio Version by OpenJDK](https://wiki.openjdk.org/display/Build/Supported+Build+Platforms)
 
      - [Here a Screen-Shot about the C++ components that is needed.](../screen-shots/visual-studio.jpg) 
